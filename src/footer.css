@@ -1,0 +1,8 @@
+.footer
+{
+    scroll-snap-align: center;
+    position: relative;
+    min-height: 50%;
+    color: blueviolet;
+    background-color: rgb(57, 70, 106);
+}
