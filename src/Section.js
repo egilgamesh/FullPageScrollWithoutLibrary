@@ -27,7 +27,7 @@ export default function Section({
         duration: 1,
         ease: "power3.out",
         scrollTrigger: {
-          scroller: ".container",
+          scroller: ".containers",
           trigger: headlineRef.current,
           start: "top 80%",
           end: "bottom 0%",
