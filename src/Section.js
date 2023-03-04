@@ -45,7 +45,7 @@ export default function Section({
 
       </div>
       <div className='content'>
-        <h2 ref={headlineRef}>{headline}</h2>
+        <h2 className="Headline" ref={headlineRef}>{headline}</h2>
       </div>
       <p>{conents}</p>
       {showArrow && (

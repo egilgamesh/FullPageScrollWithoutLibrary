@@ -1,4 +1,4 @@
-.container {
+.containers {
   position: relative;
   overflow-y: auto;
   overscroll-behavior-y: contain;
@@ -9,7 +9,7 @@
   scrollbar-width: none;
 }
 
-.container::-webkit-scrollbar {
+.containers::-webkit-scrollbar {
   display: none;
 }
 

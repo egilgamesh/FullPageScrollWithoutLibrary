@@ -45,7 +45,7 @@ function App() {
           </li>
         </ul>
       </div>
-      <div className={`container`}>
+      <div className={`containers`}>
         <Header id="home"
           className="header"
           goToSectionRef={section1}
