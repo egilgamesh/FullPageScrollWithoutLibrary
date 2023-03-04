@@ -20,8 +20,7 @@ export default function Header({ goToSectionRef, scrollTo, showArrow }) {
             <img src="img/TowersLogo.png" alt="Towers" />
           </div>
           <div className="Downloadbtn">
-            <a
-              href="https://store.steampowered.com/app/1673670/Towers/"
+            <a href="https://store.steampowered.com/app/1673670/Towers/"
               target="_blank"
               rel="noreferrer"
             >
@@ -34,7 +33,6 @@ export default function Header({ goToSectionRef, scrollTo, showArrow }) {
                 <div className="centered">
                 <p>Play Now</p>
                 </div>
-
               </div>
             </a>
           </div>

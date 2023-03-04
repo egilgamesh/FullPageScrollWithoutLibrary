@@ -19,7 +19,7 @@ function App() {
       <div className="containerdot">
         <ul className="smenu">
           <li className="smenuitem">
-            <a href="#">
+            <a href="#home">
               <span className="tooltip">HOME</span>
             </a>
           </li>
@@ -33,10 +33,20 @@ function App() {
               <span className="tooltip">ABOUT</span>
             </a>
           </li>
+          <li className="smenuitem">
+            <a href="#">
+              <span className="tooltip">HOME</span>
+            </a>
+          </li>
+          <li className="smenuitem">
+            <a href="#">
+              <span className="tooltip">HOME</span>
+            </a>
+          </li>
         </ul>
       </div>
       <div className={`container`}>
-        <Header
+        <Header id="home"
           className="header"
           goToSectionRef={section1}
           scrollTo={scrollTo}
