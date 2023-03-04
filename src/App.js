@@ -1,9 +1,9 @@
 import { useEffect, useRef } from "react";
 import Section from "./Section";
 import "./Home.css";
-import "./footer.css"
-import "./header.css"
-import Header from "./header";;
+import "./footer.css";
+import "./header.css";
+import Header from "./header";
 
 function App() {
   const section1 = useRef();
@@ -16,22 +16,32 @@ function App() {
   }
   return (
     <div className="App">
-<div className="containerdot">
-  <div className="dot">
-    <div className="tooltip">HOME</div>
-  </div>
-  <div className="dot">
-  <div className="tooltip">GALLARY</div>
-  </div>
-  <div className="dot">
-  <div className="tooltip">ABOUT</div>
-  </div>
-</div>
+      <div className="containerdot">
+        <ul className="smenu">
+          <li className="smenuitem">
+            <a href="#">
+              <span className="tooltip">HOME</span>
+            </a>
+          </li>
+          <li className="smenuitem">
+            <a href="#">
+              <span className="tooltip">GALLARY</span>
+            </a>
+          </li>
+          <li className="smenuitem">
+            <a href="#">
+              <span className="tooltip">ABOUT</span>
+            </a>
+          </li>
+        </ul>
+      </div>
       <div className={`container`}>
-      <Header className="header"  goToSectionRef={section1}
-            scrollTo={scrollTo}
-            showArrow={true}>
-        </Header>
+        <Header
+          className="header"
+          goToSectionRef={section1}
+          scrollTo={scrollTo}
+          showArrow={true}
+        ></Header>
         <div ref={section1}>
           <Section
             image={`https://towersgame.net/img/Screenshots/IonPreview.jpg`}
@@ -53,15 +63,16 @@ function App() {
 
         <div ref={section3}>
           <Section
-            image={"https://towersgame.net/img/Screenshots/MultiplayerPreviewFarm.jpg"}
+            image={
+              "https://towersgame.net/img/Screenshots/MultiplayerPreviewFarm.jpg"
+            }
             headline={`Play Different Heroes with Different Skills And Strategies`}
             goToSectionRef={section5}
             scrollTo={scrollTo}
             showArrow={true}
           />
         </div>
-        <footer className="footer" ref={section5}>
-          </footer>
+        <footer className="footer" ref={section5}></footer>
       </div>
     </div>
   );
