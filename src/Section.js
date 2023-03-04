@@ -49,10 +49,10 @@ export default function Section({
       </div>
       <p>{conents}</p>
       {showArrow && (
-        <button
+        <div
           className="downarrow"
           onClick={() => scrollTo(goToSectionRef)}
-        ></button>
+        ></div>
       )}
     </div>
   );

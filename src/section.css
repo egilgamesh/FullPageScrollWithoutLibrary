@@ -27,15 +27,39 @@
   left: 0;
   right: 0;
   margin: 0 auto;
-  background-image: url("./images/downarrow.svg");
+  background-image: url("../public/img/arrow-down-icon.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 40px;
   height: 40px;
   z-index: 2;
   cursor: pointer;
+  animation: down 1.5s infinite;
+  -webkit-animation: down 1.5s infinite;
 }
 
+@keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(15px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}
+@-webkit-keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(15px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}
 
 .content h2 {
   position: relative;

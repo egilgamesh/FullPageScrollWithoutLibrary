@@ -16,6 +16,17 @@ function App() {
   }
   return (
     <div className="App">
+<div className="containerdot">
+  <div className="dot">
+    <div className="tooltip">HOME</div>
+  </div>
+  <div className="dot">
+  <div className="tooltip">GALLARY</div>
+  </div>
+  <div className="dot">
+  <div className="tooltip">ABOUT</div>
+  </div>
+</div>
       <div className={`container`}>
       <Header className="header"  goToSectionRef={section1}
             scrollTo={scrollTo}

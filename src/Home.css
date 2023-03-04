@@ -12,3 +12,77 @@
   .container::-webkit-scrollbar {
     display: none;
   }
+
+
+
+  .containerdot
+{
+  position:fixed;
+  display:flex;
+  flex-direction:column;
+  top: 40%;
+  left: 2%;
+  z-index: 3;
+
+}
+
+.dot
+{
+  margin-right: -4px;
+  font-size:35px;
+  color:#222;
+  transition: width 5s;
+  cursor: pointer;
+}
+
+.dot:before
+{
+    content: '\2022';
+    color:#878484;
+    transition: width 5s;
+
+}
+
+
+.tooltip
+{
+  display: none;
+  background-color: #fb2a00;
+  padding: 10px;
+  font-size: 14px;
+  margin-left: 20px;
+  color: white;
+  border-radius: 5px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.dot:hover::before
+{
+   transition: width 3s;
+   color:#D75C42;
+   animation: down 1.5s infinite;
+   -webkit-animation: down 1.5s infinite;
+}
+
+.dot:hover .tooltip
+{
+  display: inline;
+}
+
+.dot:active::before
+{
+  transition: width 5s;
+  color:#D75C42;
+  animation: down 1.5s infinite;
+  -webkit-animation: down 1.5s infinite;
+}
+
+  @keyframes down {
+    0% {
+      color:#D75C42;
+    }
+
+    40% {
+      color:#D75C42;
+    }
+   
+  }
