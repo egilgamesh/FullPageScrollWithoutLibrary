@@ -4,6 +4,8 @@ import "./Home.css";
 import "./footer.css";
 import "./header.css";
 import Header from "./header";
+import Hero from "./hero";
+import Gallary from "./gallary";
 
 function App() {
   const section1 = useRef();
@@ -53,7 +55,7 @@ function App() {
           showArrow={true}
         ></Header>
         <div ref={section1}>
-          <Section
+          <Hero
             image={`https://towersgame.net/img/Screenshots/IonPreview.jpg`}
             headline={`Play Different Heroes with Different Skills And Strategies`}
             goToSectionRef={section2}
@@ -61,6 +63,7 @@ function App() {
             showArrow={true}
           />
         </div>
+        <Gallary></Gallary>
         <div ref={section2}>
           <Section
             image={`https://towersgame.net/img/Screenshots/GrantPreview.jpg`}
